@@ -1,0 +1,29 @@
+Q4/- Explain about the various HTTP request methods and some of the commonly used
+HTTP response status codes.
+
+Answer-
+
+There are 4 major HTTP request methods-
+
+1. GET - It reads a resources.
+2. POST - It creates a new resource.
+3. PUT - It updates an existing resource.
+4. DELETE - It deletes the resource.
+
+--by default these status code will be set by the server, or as a developer we can 
+also set our desired status code.
+
+100 -- 199  : information 
+200 -- 299 : success or OK
+300--399 : redirection
+400 -499 : incomplete resource / bad request
+500-599 : server-error
+
+--these status code will be used by the client to know the status of their request.
+
+HTTP also defines the following standard status code:
+200: SUCCESS
+201: CREATED
+401: UNAUTHORIZED
+404: RESOURCE NOT FOUND
+500: SERVER ERROR

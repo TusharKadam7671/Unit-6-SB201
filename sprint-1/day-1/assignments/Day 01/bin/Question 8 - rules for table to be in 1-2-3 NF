@@ -1,0 +1,17 @@
+Q8. What are the rules for a table to be in 1NF, 2NF, and 3NF?
+
+Answer-
+
+#1NF (First Normal Form) Rules
+-Rule 1- Each table cell should contain a single(atomic) value.
+-Rule 2- Each record needs to be unique.
+
+#2NF (Second Normal Form) Rules
+-Rule 1- Be in 1NF
+-Rule 2- Single Column Primary Key that does not functionally dependant on 
+any subset of candidate key relation
+(it should not have Partial Dependency).
+
+#3NF (Third Normal Form) Rules
+-Rule 1- Be in 2NF
+-Rule 2- Has no transitive functional dependencies

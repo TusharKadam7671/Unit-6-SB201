@@ -1,0 +1,35 @@
+Q5. Why to use ORM and What are the benefits of ORM?
+
+Answer-
+
+--We have used SQL database in our application and we used SQL queries to update, insert
+or retrieve the data, no matter how tough the queries are. So, from here idea of Object
+Relational Mapping(ORM) comes. 
+--And it is a programming technique for converting data between incompatible type 
+systems using object-oriented programming language.
+
+--With ORM we can write database queries usign object oriented paradigm of our preferred
+language and there are many free and commercial packages available that perform object
+relational mapping.
+
+--ORM sets the mapping between the set of objects which are written in the preferred
+programming language and relational database like SQL.
+--It hides and encapsulates the SQL queries into objects and instead of SQL queries we
+can use directly the objects to implement the SQL query.
+
+Why to use ORM-
+1.We get to write in the language we already using. It is sometimes tough to write SQL
+queries directly as they are complicated in some cases. So, to maintain the fluency
+we use ORM.
+2.It hides the SQL or any other database query away from your application logic.
+3.For heavy database usege like creating 10+ tables and using many queries in them, then
+it is good to use ORM as it reduce the code and give better understanding of the code to
+you and your team mates.
+4.It makes your application faster and easier to maintain.
+
+Benefits of ORM-
+1.Speeds-up development- eliminates the need for repetitive SQL code.
+2.Reduces development time.
+3.Reduces development cost.
+4.Overomes vendor specific SQL differences- the ORM knows how to write vendor specific
+SQL so you dont have to.

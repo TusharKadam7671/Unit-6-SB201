@@ -1,0 +1,25 @@
+Q5. What are the different phases of the default life cycle?
+
+Answer-
+
+Maven build life cycle contains different phases-
+
+1. Validate- in this phase it will verify the project directory structure is valid or
+not and it has pom.xml file is there or not.
+
+2. Compile- Maven compile all the source code of the project by downloading and adding
+required jar files in the classpath.
+
+3. Test-compile- If we have written any unit test cases those code will be compiled.
+
+4. Test- Maven will run all the test cases and it will show how many test cases are
+success and how many fails.
+
+5. Package- Maven will bundle our java code into a jar file inside 'target' folder.
+
+6. Install- that jar file in step 5 will be stored in the local repository.
+
+7. Deploy- Maven stores the application jar file to the central repository.
+
+8. Clean- here maven will delete and remove all the files that are generated in previous
+build. This phasw is an isolated phase.

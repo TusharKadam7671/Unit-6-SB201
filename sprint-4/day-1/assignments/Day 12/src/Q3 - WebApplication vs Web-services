@@ -1,0 +1,16 @@
+Q3/- What is the difference between WebApplication and Web-services?
+
+Answer-
+
+-Web services is a part of WebApplication.
+
+1)Web-Application is meant for the end-user and to be accessed by the browser in a human-readable format. 
+whereas a Web Service is meant for applications to access the raw data in the form of XML, JSON, plain text, etc.
+
+2)A Web-Application can access the Web-Services to access some data or to perform some tasks. 
+whereas a Web Service can not access a Web Application to get some data.
+
+3)A single Web-Service can be used by different kinds of applications (developed in any technology like Java, .Net, Angular,
+React, Phyton, etc.).
+whereas a Web Application is not meant for reusability.
+

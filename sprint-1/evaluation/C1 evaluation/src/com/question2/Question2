@@ -1,0 +1,59 @@
+● Explain difference between JPA and Hibernate.
+● Explain the Life-cycle of Entity class with example.
+
+Answer-
+
+Q1)difference between JPA and Hibernate.
+
+JPA-
+1.described in javax.persistence package
+2.not an implementation. It is only specification.
+3.It uses JPQL i.e. java persistence query language
+4.It uses EntityManager interface
+
+
+Hibernate-
+1.described in org.hibernate package
+2.implementation of JPA.
+3.It uses HQL i.e. Hibernate query language.
+4.It uses SessionFactory interface.
+
+
+
+Q2)Life cycle of Entity class-
+
+There are three life cycle states of an entity class
+1.Transient
+2.Persistance
+3.Detached
+
+1.transient state
+-initial state of an object, once we create instance of pojo class
+object enters in transient state
+--transient object exist in heap memory
+
+Employee emp = new Employee(); //here object enters in transient state
+emp.setId(12);
+
+2.Persistence state-
+-as soon as object associsted with session it enters into persistence state
+-any modification in data changes in database
+	session.persist(emp); 
+	or
+	em.persist(emp);
+	
+3.Detached state-
+-once we close session or clear its cache object enters in detached state
+-to again attach object to the hibernate session we have to use merge()
+load() like methods.
+-session.close();
+session.clear()
+
+
+
+
+
+
+
+
+

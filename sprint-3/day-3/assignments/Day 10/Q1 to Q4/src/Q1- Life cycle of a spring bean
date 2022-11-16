@@ -1,0 +1,42 @@
+Q1/- Explain about the life-cycle of a Spring Bean.
+
+Answer-
+
+For simple java classes constructor and finalize() methods is the  life cycle methods that
+is called by JVM automatically.
+In spring spring container controls the spring bean life-cycle.
+there is initialization and destroy methods.
+
+There are 5 stages of spring bean class in life cycle
+1)Does not exist
+2)Instantiated
+3)Initialized
+4)Service
+5)Destroy
+
+
+1. Does not exist phase:
+Initially a spring bean object does not exist, if the bean object is in singleton scope then bean is instantiated by
+container at the time of loading the xml file.
+If the scope is prototype then it is instantiated at the time of pulling the object/utilizing that object. (i.e. at the
+time of calling the getBean() method).
+
+
+2. Instantiation phase:
+Spring container loads the spring bean class into the memory and creates the bean class object.
+after that then bean class object is created, spring container uses DI to populate the bean fields
+(properties/variables)
+All the dependencies will be resolved for a spring bean before its instantiation is finished.
+
+3. Initialization phase
+If inside the spring bean class any user-defined init-method is configured , spring container will call that
+method
+
+4. Service phase / Ready to use phase:
+Here spring container provides the bean object reference to the caller, then caller can call its business method
+on that bean object.
+
+5. Destruction phase:
+Upon the container shutdown (when we call close() method on the container class ) spring container will call
+user-defined destroy() method if it is configured, just before bean instance is garbage collected.
+

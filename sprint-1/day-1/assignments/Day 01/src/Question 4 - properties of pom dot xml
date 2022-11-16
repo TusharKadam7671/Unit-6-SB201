@@ -1,0 +1,30 @@
+Q4. Explain about the basic properties of pom.xml file.
+
+Answer-
+
+--POM is acronym for Project Object Model. The pom.xml file contains information of project
+and configuration information for the maven to build the project such as dependencies,
+build directory, source directory, test source directory, plugin, goals etc.
+
+--Maven reads the pom.xml file, then executes the goal.
+
+--Basic properties or elements of the pom.xml file-
+
+For creating the simple pom.xml file, you need to have following elements:
+1.project: It is the root element of pom.xml file.
+2.modelVersion: It is the sub element of project. It specifies the modelVersion. It should be set to 4.0.0.
+3.groupId: It is the sub element of project. It specifies the id for the project group.
+4.artifactId: It is the sub element of project. It specifies the id for the artifact (project). 
+An artifact is something that is either produced or used by a project. Examples of artifacts produced 
+by Maven for a project include: JARs, source and binary distributions, and WARs.
+5.version: It is the sub element of project. It specifies the version of the artifact under given group.
+
+Maven pom.xml file with additional elements
+Here, we are going to add other elements in pom.xml file such as:
+
+1.packaging: defines packaging type such as jar, war etc.
+2.name: defines name of the maven project.
+3.url: defines url of the project.
+4.dependencies: defines dependencies for this project.
+dependency: defines a dependency. It is used inside dependencies.
+5.scope: defines scope for this maven project. It can be compile, provided, runtime, test and system.

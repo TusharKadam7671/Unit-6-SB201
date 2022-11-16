@@ -1,0 +1,24 @@
+Q2. When should one use Maven?
+
+Answer-
+
+--Build automation is the act of scripting or automating a wide variety of tasks
+that software developers do in their day-to-day activities.
+
+--In small projects, developers will often manually invoke the build process.
+
+--This is not practical for larger projects, where it is very hard to keep track of 
+what needs to be built,in what sequence and what dependencies there are in the 
+building process. Using an automation tool allows the build process to be more consistent.
+
+--So, in these case build tools like ANT,Maven,Gradle are used.
+
+--Maven is a tool that can now be used for building and managing any Java-based project. It makes the day-to-day
+work of Java developers easier and generally help with the comprehension of any Java-based project.
+
+--Maven is a powerful project management tool that is based on POM (project object model). It is used for projects
+build, dependency and documentation.
+
+--In Maven, a dependency is just another archive—JAR, ZIP, and so on—which our current project needs in order
+to compile, build, test, and/or run. These project dependencies are collectively specified in the pom. xml file,
+inside of a <dependencies> tag.

@@ -1,0 +1,16 @@
+Q1/- What are the limitations of EntityManager methods to perform CRUD operations with
+DB?
+
+Answer-
+
+-EntityManager have the following methods-
+Persist(), find(), merge(), and remove()
+
+-but these methods have following limitations while performing CRUD operations with database-
+
+1.Retriving Entity object based on only ID field (Primary key field) @ID.
+2.Multiple Entity object retrival is not possible (multiple record).
+3.Bulk update and bulk delete is also not possible.
+4.To access Entity object we can not specify some extra condition.
+
+-To overcome the above limitation JPA has provided JPQL(Java Persistence Query Language).

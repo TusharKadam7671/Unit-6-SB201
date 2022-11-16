@@ -1,0 +1,34 @@
+Q4/- Write Short notes on how the Spring framework evolves
+
+Answer-
+
+-In early days of Java based business application development, programmer used multiple
+java bean classes (normal java classes) to build the business logic layer/service layer.
+-The business logic layer only required the Enterprise capabilities like security,
+transaction management, logging, mailing and messaging etc. These enterprise capabilities
+are also known as extra service to the main business logic or MIddleware services to make
+our main business logic perfect.
+-With the Java bean classes, developers are only responsible to define and add these
+middleware services to the main business logic, it increases burden to the developers.
+-To overcome the burden to develop a business logic/service logic, sun-microsystem
+has released EJB technology as part of J2EE specification in 1998.
+-In EJB technology, programmer develop the main business logic and EJB-container provides
+these extra middlewere services.
+-EJB reduced the middleware service development from the programmer, but it increased the
+complexities to access these middleware services.
+-EJB components are heavy weight components (Here our java classes need to be developed
+as EJB Component by implementing EJB technology related interfaces, need to override lots
+of unnecessary methods inside our java classes and need to register these java classes
+inside various xml files and deploy our EJB component inside the ApplicationServer s/w.)
+-EJB has beed very powerful but very complex to the build the Business logic layer.
+-To the build the business logic layer, simplicity of java bean classes + Power of EJB -
+Complexities of EJB was realised in the industry.
+
+-Rod Johnson, developed a f/w called "Interface 21" to address the above need and renamed
+it to the Spring and released in mid of 2004.
+-Spring f/w allows to write the business logic in a POJO classes, and Spring container
+provides the middleware services to our main business class with less process overhead.
+-So our business logic related classes need not implement or extends any other classes or 
+interfaces or override any unnecessary methods. No need to install ApplicationServer s/w
+-unlike EJB container, Spring container is a lightweight container, can be activated in
+any type of Java application (need not install as s/w).

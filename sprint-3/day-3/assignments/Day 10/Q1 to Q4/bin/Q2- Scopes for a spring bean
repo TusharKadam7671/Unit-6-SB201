@@ -1,0 +1,55 @@
+Q2/- How many scopes are there for a Spring Bean, which is the default scope for a Spring
+Bean? Explain with an example.
+
+Answer-
+
+A scope indicates the life span of an object of Spring bean.
+Spring f/w defines 4 scopes for a bean-
+1.Singleton scope (it is a default scope of spring bean)
+2.prototype scope
+3.request scope
+4.session scope
+
+-singleton and prototype scope can be used in both web and non-web(standalone) application.
+-request and session scopes are used only in the web-app (spring-mvc module)
+
+--------------------------------------------------------------------------------------
+1.Singleton scope-
+It returns same bean class object for all the getBean() method call with the same bean
+id i.e. whenever we are pulling an object with the same id multiple time, container
+will return same object.
+
+Example- 
+A obj1 = ctx.getBean("a1", A.class);
+A obj2 = ctx.getBean("a1", A.class);
+System.out.println(obj1 == obj2) //true.
+
+--------------------------------------------------------------------------------------
+2.prototype scope-
+It returns a separate bean class object for every getBean() method call even with the
+same id also.
+In order to tell the container to put a bean object in a prototype scope we need to
+mention by using "scope" attribute of the <bean> tag.
+
+Example-
+<bean id="a1" class="com.masai.A" scope="prototype">
+<property name="message" value="Welcome to Spring.."/>
+</bean>
+
+ApplicationContext ctx= new ClassPathXmlApplicationContext("applicationContext.xml");
+
+A obj1 = ctx.getBean("a1",A.class);
+A obj2 = ctx.getBean("a1",A.class);
+
+System.out.println(obj1 == obj2); //false
+
+--------------------------------------------------------------------------------------
+
+--Singleton: The scope of bean definition while using this would be a single
+instance per IoC container.
+--Prototype: Here, the scope for a single bean definition can be any number of
+object instances.
+--Request: The scope of the bean definition is an HTTP request.
+--Session: Here, the scope of the bean definition is HTTP-session.
+
+--------------------------------------------------------------------------------------

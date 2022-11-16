@@ -1,0 +1,54 @@
+Q2/- Explain the difference between Spring-MVC and Spring Boot.
+
+Answer-
+
+Spring MVC-
+
+1.Spring MVC is a Model, View, and controller based framework used to build web application.
+2.This framework requires a lot of configurations, such as DispatcherServlet configurations
+and view Resolver configurations.
+3.Every dependency needs to be specified separately for be specified separately for the 
+features to run.
+4.Spring MVC helps to develop applications easily.
+5.The time required for development is more as compared to Spring Boot because developers
+need to devote time to adding required dependencies.
+6.The productivity gets reduced since one needs to understand the dependency add-ons.
+7.Spring MVC requires a lot of manual configurations into the feature for JAR packaging.
+8.A deployment descriptor is required for the Spring MVC framework.
+9.The four components of Spring MVC are Model, View, Controller, and Front Controller(
+DispatcherServlet)
+10.Spring MVC is only designed to develop dynamic web pages and RESTful web services.
+11.It does not provide powerful batch processing.
+12.It is necessary to build the configuration manually if we are using Spring MVC.
+13.Spring MVC requires a deployment descriptor.
+14.Each dependency is specified separately in Spring MVC.
+15.The spring MVC framework requires more time for development.
+16.There is no powerful batch processing feature in Spring MVC.
+
+Spring Boot-
+
+1.Spring Boot is one of the most widely used frameworks in the REST API development field.
+It is developed on top of the conventional spring framework. It is used to build 
+stand-alone web spring applications.
+2.Spring Boot has the configurations automatically with its Auto-configuration feature.
+3.Spring Boot has the concept of starters, once it is added to the classpath, it will
+bring all the dependencies needed for dependencies needed for the dependencies needed
+for developing a web application.
+4.Spring Boot helps to develop the applications easily and quickly with features like
+auto-configuration and starters.
+5.Spring Boot helps in reducing the development time as all the dependency-related task gets
+handled.
+6.Since the development time is less, productivity increases.
+7.Spring Boot allows the embedded server to run the feature in a stand-alone manner.
+8.A deployment descriptor is not required for the Spring Boot framework.
+9.The four layers of Spring Boot are the Presentation layer, Business layer, Persistence
+layer, and Database layer.
+10.Spring Boot allows building different other kinds of applications too.
+11.It provides powerful batch processing.
+12.Spring Boot eliminates the need to manually build the configuration.
+13.Spring Boot does not require deployment descriptors.
+14.In Spring Boot, all dependencies are wrapped together in a single unit.
+15.The Spring Boot framework reduces development time and increases productivity at 
+the same time.
+16.The Spring Boot framework provides powerful batch processing capabilities.
+

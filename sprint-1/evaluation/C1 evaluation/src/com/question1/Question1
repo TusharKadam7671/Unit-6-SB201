@@ -1,0 +1,15 @@
+What are the advantages of using Hibernate over JDBC?
+
+Answer- 
+
+1.Hibernate stores java object to database directly.
+2.supports pojo and poji.
+3.Lighweight software because no need to install any kind of jar file
+4.ORM persistence logic is database s/w independent
+5.Prevents developer from writing boiler plate code
+6.provides caching mechanism.
+7.generated sql queries internally thats why efficient than jdbc.
+8.exception handling is easy as compared to jdbc because throw unchecked exception
+9.and has a special query language - JPQL java persistence query language
+
+this are the advantages of using hibernate over jdbc.

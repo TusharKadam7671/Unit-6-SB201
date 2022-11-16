@@ -1,0 +1,95 @@
+Q1-> Explain Layared Architecture in Business application
+
+Answer-
+
+1.Maintaining the business data in secure and easily retrival manner.
+-the logic that we write to implement this part of business application is know as
+Data Access Logic.
+
+2.Processing the data according to the bussiness rule-
+-the logic that we write to implement this part of business application is known as 
+Business/Service logic.
+
+3.Presenting the data to the user in user-understandable format
+-the logic that we write to implement this part of bussiness application is known as
+Presentation logic.
+
+	the above 3 logics are required for almost every business application.
+	
+class MyBusinessApplication
+{
+
+	//Data Access Logic //fetch the account information from the DB.
+	//Business Logic //calculating the Interest to the balance.
+	//Presentation Logic //display the information to the client
+
+}
+
+-We can write all 3 logics to develop a business application in one program/class
+itself, if we do so, the following problem we will face:
+
+1.All the logics to develop the application will be mixed up with each other (no clear
+code separation)
+2.Modification done in one logic may affect the othe logic
+3.Logics will depend upon each other so parallel development will not be possible
+4.Testing each logic is also will become complex
+
+	to solve this problems, a java based business application, we devide into 3 logical
+partition depending upon the  role played by each part and each part we say 
+as a layer-
+
+1.Presentation Layer (UI Layer)
+2.Bussiness Logic Layer (Service Layer)
+3.Data Access Layer
+
+1.Presentation layer-
+	It is set of java classes, which are responsible for generating user input screen
+and response page(output screen) is known as presentation layer.
+	This layer provides the interaction with the end-user.
+	
+2.Business/Service logic layer-
+	Programatical implementation of business rule of a business organization is nothing
+but business logic
+	A collection of java classes whose methods have business logic to process the data
+according to the businesss rule is known as Business/Service layer.
+
+3.Data Access Layer-
+	A set of java classes whose methods are exclusively meant for performing CRUD 
+operation with the DB server is known as Data Access Layer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="e1" class="com.masai.Employee">
+
+		<constructor-arg name="empId" value="1"></constructor-arg>
+		<constructor-arg name="empName" value="Tushar"></constructor-arg>
+		<constructor-arg name="address" value="MH"></constructor-arg>
+		<constructor-arg name="salary" value="6500"></constructor-arg>
+
+	</bean>
+
+	<bean id="e2" class="com.masai.Employee">
+
+		<constructor-arg name="empId" value="2"></constructor-arg>
+		<constructor-arg name="empName" value="Ravi"></constructor-arg>
+		<constructor-arg name="address" value="GA"></constructor-arg>
+		<constructor-arg name="salary" value="4600"></constructor-arg>
+
+	</bean>
+
+	<bean id="e3" class="com.masai.Employee">
+
+		<constructor-arg name="empId" value="3"></constructor-arg>
+		<constructor-arg name="empName" value="Mahesh"></constructor-arg>
+		<constructor-arg name="address" value="KA"></constructor-arg>
+		<constructor-arg name="salary" value="5200"></constructor-arg>
+
+	</bean>
+
+
+
+
+
+	<bean id="d1" class="com.masai.Department">
+		<constructor-arg name="deptId" value="1" />
+		<constructor-arg name="deptName" value="Sales" />
+		<constructor-arg name="location" value="Mumbai" />
+
+	</bean>
+	
+	<bean id="d2" class="com.masai.Department">
+		<constructor-arg name="deptId" value="2" />
+		<constructor-arg name="deptName" value="Marketing" />
+		<constructor-arg name="location" value="Pune" />
+
+	</bean>
+	
+	<bean id="d3" class="com.masai.Department">
+		<constructor-arg name="deptId" value="3" />
+		<constructor-arg name="deptName" value="Accounts" />
+		<constructor-arg name="location" value="Nagpur" />
+
+	</bean>
+	
+	
+	
+	
+	<bean id="demo" class="com.masai.Demo" init-method="myInit" destroy-method="cleanUp" lazy-init="true" >
+	
+	<property name="theMap">
+	
+	<map>
+	
+	<entry key-ref="d1" value-ref="e1"></entry>
+	<entry key-ref="d2" value-ref="e2"></entry>
+	<entry key-ref="d3" value-ref="e3"></entry>
+	
+	</map>
+	
+	</property>
+	
+	</bean>
+
+
+</beans>

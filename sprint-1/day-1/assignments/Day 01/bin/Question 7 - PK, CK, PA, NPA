@@ -1,0 +1,102 @@
+Q7. Explain what a Primary key, Candidate Key, Prime Attributes,
+and Non-prime Attributes is
+
+Answer-
+
+1.Primary key-
+--A primary key is the column or columns that contain values that uniquely identify
+each row in a table.
+--It is unique column in every table in a database.
+--It can ONLY accept;
+			-non duplicate values
+			-cannot be null			
+--A table can have only ONE primary key, and in the table, this primary key can consist
+of single or multiple columns (fields).
+
+--------------------------------------------------------------------------------------
+
+2.Candidate key-
+--A candidate key is a subset of a super key set where the key which contains 
+no redundant attribute is none other than a Candidate Key.
+(Super key- It is the superset of all such attributes that can uniquely identify the table)
+
+Emp_ssn		Emp_id		Emp_name		Emp_email
+11051		  01		  John		   john@gmail.com
+19801		  02		  Merry		   merry@gmail.com
+19801		  03		  Riddle	   riddle@gmail.com
+41201		  04		  Cary		   cary@gmail.com
+
+set of super keys obtained-
+{Emp_sss}
+{Emp_id}
+{Emp_email}
+{Emp_ssn, Emp_id}
+{Emp_id, Emp_name}
+{Emp_ssn, Emp_id, Emp_email}
+{Emp_ssn, Emp_name, Emp_id}
+
+Candidate keys-
+Emp_ssn
+Emp_id
+Emp_email
+
+--------------------------------------------------------------------------------------
+
+3.Prime attribute-
+--A prime attribute is an attribute that is part of any candidate key.
+--Prime attributes can be used to uniquely identify a tuple in the table 
+because they have unique values.
+--Prime Attributes are also known as Key Attributes.
+--For Example :- Registration number and ID number will be prime attributes 
+in a schema because every person will have a unique id and registration number.
+
+--------------------------------------------------------------------------------------
+
+4.Non-Prime attribute-
+--Those attribute which are not part of any candidate key is known as Non-prime attribute.
+--Non-prime attributes can not be used to uniquely identify a tuple in the table 
+because they can have the same values.
+--Non-Prime attributes are often known as Non-key attributes.
+--For Example - Name and age will be non-prime attributes in a schema 
+because any person can have the same name and age.
+
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

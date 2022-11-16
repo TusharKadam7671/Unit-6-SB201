@@ -1,0 +1,50 @@
+Q1/- What do you mean by the IOC, explain the life cycle of the Spring
+Bean.
+
+Answer-
+
+		Inversion of control-
+-If any external entity is taking care of the resolving dependencies then we can say 
+the control is inverted to that external entity and it is called as Inversion of control
+
+
+		Life cycle of the Spring Bean-
+
+-Life cycle of normal java class in maintained by constructor and finlize() methods.
+In Spring, Spring container maintain life cycle of Spring bean using init and destroy() methods.
+
+-There are 5 stages of spring bean life cycle-
+1.Does not exists
+2.Instansiate
+3.Initialized
+4.Service
+5.Destroy
+
+1)At first there is no spring bean object exists.If bean object is singlton
+scope then will load at the time of loading xml file by container.
+
+2)After this container load bean class into the memory, creates bean class object
+and after that all dependencies are resolved by container at the time of loading.
+
+3)In bean class if there is any user defined init methods, then that methods
+are configured by the container.
+
+4)container will provide bean class object reference to the caller and call it's methods
+
+5)while closing container, by close() method, container will call user defined
+destroy() methods, and all associated bean object will be eligible for garbage collector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

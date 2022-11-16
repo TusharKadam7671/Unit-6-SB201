@@ -1,0 +1,27 @@
+Q/- What is a Spring Bean and Spring container? How to activate the Spring Container in our
+application.
+
+Answer-
+
+Spring Beans-
+-Any java class, which will be registered with the "Spring container software" is 
+known as Spring bean. The Spring bean is basically a POJO class
+-They are the objects forming the backbone of the user's application and are managed
+by the Spring IoC container.
+-Spring beans are instantiated, configured, wired, and managed by IoC container.
+-Beans are created with the configuration metadata that the users supply to the 
+container (by means of XML or java annotations configurations.)
+
+-----------------------------------------------------------------------------------
+
+Spring Container-
+-Spring container forms the core of the Spring framework. 
+-In spring application, A pure java class that controls all the spring beans is known
+ as a spring container.
+-The Spring container uses Dependency Injection (DI) for managing the application 
+components by creating objects, wiring them together along with configuring and 
+managing their overall life cycles.
+-The instructions for the spring container to do the tasks can be provided either by
+XML configuration, Java annotations, or Java code.
+
+-----------------------------------------------------------------------------------

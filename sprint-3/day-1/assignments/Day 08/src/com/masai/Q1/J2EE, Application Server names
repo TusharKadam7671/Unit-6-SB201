@@ -1,0 +1,82 @@
+Q1/- What is the J2EE, list out some of the Application Server names.
+
+Answer-
+
+J2EE-
+
+--J2EE stands for Java 2 platform, Enterprise Edition. J2EE is the standard platform
+for developing application in the enterprise and in designed for enterprise applications
+that run on servers.
+
+--J2EE provides APIs that let developers create workflow and make use of resources such
+as database or web services. J2EE consists of a set of APIs. Developers can use these
+APIs to build application for business computing.
+
+--A J2EE application server is software that runs applications built with J2EE APIs and
+lets you run multiple applications on a single computer. Developers can use different
+J2EE application servers to run applications built with J2EE APIs.
+
+--Benefits of J2EE-
+1.Portability- If you build a J2EE application on a specific platform, it runs the same
+way on any other J2EE-compliant platform.
+2.Reusability- The components in J2EE are reused, so the average size of an application
+is much smaller than it would be if you had to write equivalent functionality from 
+scratch for each program.
+3.Security- Java technology lets  programmers handle sensitive data far more securely
+than they can in C/C++ programs.
+4.Scalability- J2EE lets developers build application that run well on both small,
+single-processor computers and large, multi-processor systems.
+5.Reliability- Many of the services (such as transaction management and monitoring)
+that applications need to be reliable are built into J2EE.
+
+---------------------------------------------------------------------------------------
+
+Application server- 
+
+--Application servers provide a framework to build and deploy web applications and offer
+a variety of services when running such applications.
+--These services include security, transactions, clustering for increased performance,
+and diagnostic capabilities, among others. These products can also include servers that
+strictly host web applications.
+--Application servers are used by software developers who are trying to quickly build
+applications and have them supported by the server environment in which they are deployed.
+
+--List of some application server softwares-
+01. Apache Tomcat
+02. Payara Server
+03. Red Hat JBoss Enterprise Application Platform
+04. Jetty
+05. Apache TomEE
+06. Oracle WebLogic
+07. IBM WebSphere Hybrid Edition (Application Server & Liberty)
+08. Wildfly
+09. Apache Geronimo
+10. GlassFish
+
+--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

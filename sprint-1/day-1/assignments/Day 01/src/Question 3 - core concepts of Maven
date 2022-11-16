@@ -1,0 +1,86 @@
+Q3. Explain the core concepts of Maven.
+
+Answer- 
+
+--Maven is based on the concept of project object model (POM) file. POM is an XML file
+which contains project resources like source code, test code and dependencies (external
+JARs) etc. The POM file should be in the project's root directory.
+
+--Maven reads the pom.xml file
+--Downloads dependencies into local repository
+--Execute life cycles, build phases and goals
+--Execute plugins.
+
+--Mave core concepts-
+  POM files
+  Build life cycles, phases and goals
+  Dependencies and Repositories
+  Build plugins
+  Build Profiles
+  
+--POM files- POM is an acronym for Project Object Model. The pom.xml file contains information 
+of project and configuration information for the maven to build the project such as 
+dependencies, build directory, source directory, test source directory, plugin, goals etc.
+  Maven reads the pom.xml file, then executes the goal.
+  
+--Build life cycles, phases and goals- A Build Lifecycle is a well-defined sequence of 
+phases, which define the order in which the goals are to be executed. Here phase 
+represents a stage in life cycle. As an example, a typical Maven Build Lifecycle 
+consists of the following sequence of phases.
+	1.Validate 2.Complie 3.Test-compile 4.Test 5.Package 6.Install 7.Deploy 8.Clean
+	
+--Dependencies and Repositories- Repository is a collection of artifacts (eg: jars). 
+You can think of it as a mere storage / cache of various artifacts.
+  Dependency is a situation where your project dependent on another artifact 
+to perform its task (eg: compile, run, unit test)
+
+--Build plugins- Plugins are the central feature of Maven that allow for the 
+reuse of common build logic across multiple projects. They do this by executing 
+an "action" (i.e. creating a WAR file or compiling unit tests) in the context of 
+a project's description - the Project Object Model (POM). Plugin behavior can be 
+customized through a set of unique parameters which are exposed by a description 
+of each plugin goal (or Mojo).
+
+--Build profiles- A Build profile is a set of configuration values, which can be 
+used to set or override default values of Maven build. Using a build profile, 
+you can customize build for different environments such as 
+Production v/s Development environments. Profiles are specified in pom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

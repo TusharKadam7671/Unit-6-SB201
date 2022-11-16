@@ -1,0 +1,29 @@
+Q2/- What is the difference between an Application Server and a Web server?
+
+Answer-
+
+Web Server-
+1.Web Server encompasses web container only.
+2.Web Server is useful or fitted for static content.
+3.Web Server consumes or utilizes less resources.
+4.Web Servers arranges the run environment for web applications.
+5.In web servers, multithreading is supported.
+6.Web Server's capacity is lower than application server.
+7.In Web Server, HTML and HTTP protocols are used.
+8.Processes that are not resource-intensive are supported.
+9.Transactions and connection pooling is not supported.
+10.The capacity of fault tolerance is low as compared to application servers.
+11.Web Server examples are Apache HTTP server, Nginx.
+
+Application Server-
+1.While application server encompasses web container as well as EJB container.
+2.Whereas application server is fitted for dynamic content.
+3.While application server utilize more resources.
+4.While application servers arrange the run environment for enterprises application.
+5.While in application server, multi-threading is not supported.
+6.While application server's capacity is higher than web server.
+7.While in this, GUI as well as HTTP and RPC/RMI protocols are used.
+8.Processes that are resource-intensive are supported.
+9.Transactions and connection pooling is supported.
+10.It has high fault tolerance.
+11.Application servers examples are JBoss, GlassFish.

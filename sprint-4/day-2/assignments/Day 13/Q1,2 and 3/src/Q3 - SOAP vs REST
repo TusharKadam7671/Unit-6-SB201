@@ -1,0 +1,23 @@
+Q3/- What is the difference between SOAP and REST ?
+
+Answer-
+
+	SOAP-
+
+1.SOAP is a protocol through which two computer communicates by sharing XML document.
+2.SOAP permits only XML
+3.SOAP based reads cannot be cached.
+4.SOAP is like custom desktop application, closely connected to the server.
+5.SOAP is slower than REST.
+6.It runs on HTTP but envelopes the message.
+	
+	REST-
+	
+1.REST is a service architecture and design for network-based software architectures.
+2.REST supports many different data formats.
+3.REST reads can be cached.
+4.A REST client is more like a browser, it knows how to standardized methods and an
+application has to fit inside it.
+5.REST is faster than SOAP.
+6.It uses the HTTP headers to holds meta information.
+	

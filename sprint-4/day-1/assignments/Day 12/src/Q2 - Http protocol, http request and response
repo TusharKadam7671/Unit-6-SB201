@@ -1,0 +1,92 @@
+Q2/- What is the HTTP protocol, explain about the HTTP request and the HTTP response.
+
+Answer-
+
+
+
+HTTP full form is hyper text transfer protocol.
+
+--It is a protocol that contains set of rules and guidelines to get communication between
+http client (browser s/w)  and web-server/application-server.
+--In case of WebApplication the http client will be web-browser s/w , whereas in case of WebService the 
+client could be one of the following:
+1.browser s/w
+2.Postman s/w
+3.swagger s/w
+4.angular app
+5.react app
+6.normal JS using ajax (using fetch api)
+7.some other application which is developed in another language (.net, python)
+8.another type of java application / microservices
+--the client of the WebService is basically another type of application only.
+
+--------------------------------------------------------------------------------------
+
+HTTP request structure:
+
+this request is distributed in three parts
+1)intial request
+2)request header
+3)request body
+
+1)
+->this intial request is also have 3 parts in which first one is method type
+there is GET,POST,PUT,DELETE this four methods is there. we can select any of above method
+
+->second part is uri in that we have to write the page name .uri means universal
+resource identifier that identify your html page which will be deploy in web browser.
+
+->The last part is version in that we select the http browser ex-1.1,2.x etc
+
+2)
+->Second part is request header in that there is data in key value pair
+where key is fixed and value will change as per client request.
+
+1. Date : date and time on which request is made from the client.
+2. Host: ipaddress of the client.
+3. user-agent: from which browser the client has generated the request.
+4.content-type: type of the data coming from the request body (json, txt, xml, pdf, jpg)
+5.connection : live or lost(used in social medial platform to show you are online or not)
+6.cookies: name-value pair text (store you preference)
+
+we can create our headers also 
+
+3)
+-> third  part is Request body in which we send the data as per client requirement
+in json or xml or in any other format.GET and DELETE method doesn't have any request
+body.
+
+
+--------------------------------------------------------------------------------------
+
+HTTP response structure:
+
+this request is distributed in three parts
+1)intial response
+2)response header
+3)response body
+
+1)
+->first part is distributed in three parts status code,status code description and version.
+in status code it will show a code like 201,299 etc and description it will be
+mentioned the what that code stands for and version is same as http request.
+
+2)
+->second part is response header in which here also key value pair is there.
+in that it's gives some additional information to client and guide the client
+while displaying the response
+
+here is some additional information 
+
+server : 
+last-modified : 
+refresh: 10 (after every 10 second web browser will refresh)
+date:
+connection: 
+content-type: "text/html"  , "application/json", "application/pdf" ,"application/xml"
+set-cookie : 
+etc..
+
+3)
+->third part is response body which return the data for Web-application it gives in html
+type format and for Web-service it return in raw data form
